@@ -23,7 +23,7 @@ Hold the Sensor:bit with its long micro:bit slot at the top and its USB and roun
 | Single LED Module | **P12 VCC GND**, bottom-right three-pin | turn kit LED on or off |
 | Yellow slider | **P1 3V3 GND**, second on the right | slider position (percent) |
 | Photosensitive Sensor | **P2 3V3 GND**, third on the right | light sensor reading |
-| Flame sensor with analogue signal marked **A** | Same **P2 3V3 GND** socket. Compare readings with a remote control or another suitable infrared source. | flame sensor reading |
+| Flame sensor with analogue signal marked **A** | Use the four-pin **P8 P2 3V3 GND** socket with the matching lead. Verify A → P2 and D → P8 on the module marked G V A D. Compare readings with a remote control or another suitable infrared source. | flame sensor reading |
 | IR Receiver Module and Emakefun remote | **P14 VCC GND**, second on the left. Use 3V3 VCC and aim the remote at the receiver. | when remote button is pressed |
 | Touch Piano V2, marked **CLK DIO V G** | **P13 P14 VCC GND**, top middle. CLK → P13, DIO → P14. | piano key number |
 | Four-digit display with **CLK / DIO** connector | Same top-middle socket. CLK → P13, DIO → P14. Select **CLK / DIO** in the block. | show number on 4-digit display |
@@ -42,7 +42,7 @@ Hold the Sensor:bit with its long micro:bit slot at the top and its USB and roun
 - The VCC jumper changes the shared VCC rail across sockets. Keep micro:bit signal lines at safe 3.3 V logic levels. The RUS-04 is specified for 4.5–5.5 V supply. Verify its signal compatibility and use suitable level shifting where needed. Verify the supply and I²C pull-up levels for the display modules, and check the ring's supply and data-level requirements. Use a suitable separate supply and common ground where required, especially for the servo. Bench-test these setups before putting them out for pupils.
 - If two modules in the table use the same P number anywhere in their socket label, use them in separate activities. For example, the traffic light shares pins with the button and slider. The touch piano, CLK/DIO display and RUS-04 share the top-middle socket.
 - The touch piano returns 0 for no key and 1–8 for a key. Combine it with **show number** first, then map keys to notes in a separate activity. The IR block targets Emakefun's A–D NEC remote key map and fires on full key messages.
-- The 4-digit display controller label is on the back or beside its connector. The guide lists both Emakefun variants because the photo does not show that label. The fan and unidentified modules are outside this version. The software was checked with the MakeCode toolchain. The physical modules still need a classroom bench test.
+- The 4-digit display controller label is on the back or beside its connector. The guide lists both Emakefun variants because the photo does not show that label. The NTC temperature sensor, fan and separate 18650 board are outside this version. The software was checked with the MakeCode toolchain. The physical modules still need a classroom bench test.
 
 ## Reuse and publish the extension
 
