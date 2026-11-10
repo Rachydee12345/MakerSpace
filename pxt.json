@@ -1,0 +1,21 @@
+{
+    "name": "pxt-wellington-makerspace-kit",
+    "version": "0.1.0",
+    "description": "Pupil-friendly MakeCode blocks for the Emakefun Sensor:bit kit.",
+    "license": "MIT",
+    "dependencies": {
+        "core": "*"
+    },
+    "files": [
+        "README.md",
+        "makerspace.ts"
+    ],
+    "testFiles": [
+        "test.ts"
+    ],
+    "public": true,
+    "supportedTargets": [
+        "microbit"
+    ],
+    "preferredEditor": "blocksprj"
+}
