@@ -46,7 +46,11 @@ Hold the Sensor:bit with its long micro:bit slot at the top and its USB and roun
 
 ## Reuse and publish the extension
 
-The starter project contains the custom blocks and can be duplicated for pupil projects. For installation through **Extensions** in other projects, create a dedicated public GitHub repository and place the files from **extension-source** at the repository root. Tag the first commit **v0.1.0**. Paste the repository's exact URL into MakeCode's **Extensions** search. You can do the same authoring and release workflow through [MakeCode's GitHub integration](https://makecode.com/extensions/github-authoring).
+The starter project contains the custom blocks and can be duplicated for pupil projects. Once this repository is public, open a micro:bit project in [MakeCode](https://makecode.microbit.org/), choose **Extensions**, and paste the exact repository URL below. Open **Makerspace Kit** in the toolbox after it loads.
+
+```text
+https://github.com/Rachydee12345/MakerSpace
+```
 
 ## References
 
